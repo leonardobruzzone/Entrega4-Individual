@@ -54,7 +54,7 @@
         </div>
         <hr>
         <br>
-        <div class="d-flex justify-content-start">
+        <div>
           <h5>
             <strong>Precio</strong>
           </h5>
@@ -65,7 +65,7 @@
           <h7 id="productCost"></h7>
         </div>
         <br>
-        <div class="d-flex justify-content-start">
+        <div>
           <h5>
             <strong>Descripcion</strong>
           </h5>
@@ -75,7 +75,7 @@
           <h7 id="productDescription"></h7>
         </div>
         <br>
-        <div class="d-flex justify-content-start">
+        <div>
           <h5>
             <strong>Categoria</strong>
           </h5>
@@ -85,7 +85,7 @@
           <h7 id="productcate"></h7>
         </div>
         <br>
-        <div class="d-flex justify-content-start">
+        <div>
           <h5>
             <strong>Cantidad de Vendidos</strong>
           </h5>
@@ -95,18 +95,31 @@
           <h7 id="productCount"></h7>
         </div>
         <br>
-        <div class="d-flex justify-content-start">
-          <h5>
-            <strong>Imagenes ilustrativas</strong>
-          </h5>
+        <img src="" alt="">
+        <div>
+          <h5><strong>Imagenes ilustrativas</strong></h5> <br>
+          <div id="productGallery" class="row"></div>
           <br>
         </div>
         <span>_______________________________</span>
-        <div class="d-flex justify-content-start">
-          <h4>Comentarios</h4>
-          <h7 id="productComments"></h7>
+        <div>
+          <h4><strong>Comentarios</strong></h4>
+          <div id="productComments"></div>
         </div>
-        <div></div>
+        <div>
+          <h4><strong>Comentar</strong></h4>
+          <h5>Tu opinion</h5>
+          <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+          <h5>Tu puntuacion</h5>
+          <select name="score" id="score">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <button>Enviar</button>
+        </div>
       </div>
     </main>
     <footer class="text-muted">
