@@ -34,8 +34,11 @@ document.getElementById("acceso").addEventListener("click", () => {
 
 if (localStorage.getItem("userLog") == undefined){
     document.getElementById("inicio").innerHTML = "Iniciar sesión"
-}
- else {
+} else {
     document.getElementById("inicio").innerHTML = localStorage.getItem("userLog");
 }
 
+
+function logout() {
+    localStorage.removeItem("userLog");
+}
