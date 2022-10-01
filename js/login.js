@@ -34,8 +34,8 @@ document.getElementById("acceso").addEventListener("click", () => {
 
 if (localStorage.getItem("userLog") == undefined){
     document.getElementById("inicio").innerHTML = "Iniciar sesión"
- }
+}
  else {
-     document.getElementById("inicio").innerHTML = localStorage.getItem("userLog");
- }
+    document.getElementById("inicio").innerHTML = localStorage.getItem("userLog");
+}
 

@@ -18,6 +18,15 @@ document.addEventListener("DOMContentLoaded", ()=> {
                 imgContent += `<img src="${producto.images[i]}" class="col-3">`;
             }
             document.getElementById("productGallery").innerHTML = imgContent;
+
+            let related = '';
+            for (let i = 0; i < producto.relatedProducts.length; i++) {
+                related += ` <img src="${producto.relatedProducts[i].image}" class="col-3"
+                <p>${producto.relatedProducts[i].name}</p>
+                `;
+            }
+            document.getElementById("relatedProducts").innerHTML = related;
+
     })
 });
 
